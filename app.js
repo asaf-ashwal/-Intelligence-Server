@@ -18,7 +18,7 @@ app.use(aoth);
 app.use("/agents", agentsR);
 app.use("/reports", reportsR);
 app.use("/users", usersR);
-// app.use(errorHandler);
+app.use(errorHandler);
 
 app.get("/health", (req, res) => {
   res.json({ ok: true });
